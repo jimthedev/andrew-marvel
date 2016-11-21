@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box
+}
+
+body, html {
+  background-color: #1560fb;
+}
+
+.group {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.character { /* imgBox */
+
+  /* Relative position allows the label to position in relation to it */
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.character__label {
+  /* These bring the label up to the top and center it */
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  text-align:center;
+}
+.character__label h1 {
+  margin:0;
+  padding:0;
+  font-size: 30px;
+}
+.character__label h1 a {
+  display:block;
+
+  /* These three properties center w/o line breaking */
+  margin-left: -100%;
+  margin-right: -100%;
+  text-align: center;
+}
+.character__image {
+  background-color: black;
+  width: 255px;
+  height: 255px;
+}
+.character__image img {
+  height:  255px;
+  width: 255px;
+  border-radius: 100%;
+}
